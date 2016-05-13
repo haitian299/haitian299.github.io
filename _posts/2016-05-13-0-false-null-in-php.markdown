@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "PHP中比较0、false、null和""的"坑""
+title:      "PHP中比较0、false、null和''的'坑'"
 subtitle:   ""
 date:       2016-05-13
 author:     "haitian-coder"
@@ -10,7 +10,7 @@ tags:
 ---
 
 
-###测试代码:
+### 测试代码:
 
 ```
 //test.php
@@ -50,7 +50,7 @@ echo '"" == null: ';
 var_dump("" === null);
 ```
 
-###测试结果:
+### 测试结果:
 
 ```
 → php test.php
@@ -76,11 +76,11 @@ false === null: bool(false)
 "" == null: bool(false)
 ```
 
-###[官方解释][1]:
+### [官方解释][1]:
 
 ![PHP比较运算符][2]
 
-###所以
+### 所以
 
 除非你真的知道你在用`==`比较什么，一般情况用`===`更安全。
 
