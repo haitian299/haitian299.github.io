@@ -88,5 +88,5 @@ false === null: bool(false)
 
 
   [1]: http://php.net/manual/zh/language.operators.comparison.php
-  [2]: /img/bVvdtw
+  [2]: /img/2016-05-13/2016-05-13-1.png
   [3]: http://php.net/manual/zh/function.array-search.php
