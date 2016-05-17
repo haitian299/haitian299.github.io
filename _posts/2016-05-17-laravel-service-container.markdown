@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "[Laravel]唠唠Service Container"
+title:      "［Laravel］唠唠Service Container"
 subtitle:   ""
 date:       2016-05-17
 author:     "haitian-coder"
