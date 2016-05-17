@@ -234,7 +234,8 @@ class Dog implements canBePartner
 $man = new Man();
 $man->setPartner(new Dog());
 ```
-## 实际应用 ##
+
+##  实际应用  ##
 依赖注入虽然降低了耦合度，但是也有缺点，就是需要我们自己管理注入的对象。
 所以，在实际应用中，我们通常需要实现一个容器去管理和实现依赖对象的注入。
 实际上，PHP的常用Web框架中都是这么做的。
