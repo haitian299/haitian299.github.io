@@ -139,10 +139,12 @@ $man->kissWife();
 > 程序员（`猿猿`）心里：擦，Wife又可以是Man，又可以是Woman，这可咋整。
 
 这个时候，依赖注入就可以闪亮登场了。
+
 ```
 abstract class Human
 {
 }
+
 class Women extends Human
 {
 }
