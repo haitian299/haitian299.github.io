@@ -113,7 +113,7 @@ $foo->setBar($bar);
 abstract class Human
 {
 }
-class Women extends Human
+class Woman extends Human
 {
 }
 
@@ -123,7 +123,7 @@ class Man extends Human
 
     public function __construct()
     {
-        $this->wife = new Women();
+        $this->wife = new Woman();
     }
 
     public function kissWife()
@@ -147,7 +147,7 @@ abstract class Human
 {
 }
 
-class Women extends Human
+class Woman extends Human
 {
 }
 
@@ -167,7 +167,7 @@ class Man extends Human
 }
 
 $man = new Man();
-$man->setWife(new Women());
+$man->setWife(new Woman());
 $man->kissWife();
 
 $anotherMan = new Man();
@@ -194,7 +194,7 @@ class Cat implements canBePartner
 {
 }
 
-class Women extends Human implements canBePartner
+class Woman extends Human implements canBePartner
 {
 }
 
@@ -214,7 +214,7 @@ class Man extends Human implements canBePartner
 }
 
 $man = new Man();
-$man->setPartner(new Women());
+$man->setPartner(new Woman());
 $man->kissPartner();
 
 $man2 = new Man();
