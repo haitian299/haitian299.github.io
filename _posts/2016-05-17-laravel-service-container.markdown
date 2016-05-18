@@ -5,6 +5,8 @@ subtitle:   ""
 date:       2016-05-17
 author:     "haitian-coder"
 header-img: "img/bg.jpg"
+header-mask: 0.3
+catalog:    true
 tags:
     - PHP
     - Laravel
