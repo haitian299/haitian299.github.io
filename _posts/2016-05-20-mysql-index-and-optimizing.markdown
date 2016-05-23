@@ -208,7 +208,7 @@ mysql> explain select * from employees where first_name = 'Chirstian' and last_n
 在sql语句的比较运算符左侧使用函数或进行计算会使索引失效。
 
 ```
-mysql> explain select * from employees where emp_no - 1 = 10005;
+mysql> explain select * from employees where emp_no + 1 = 10005;
 +----+-------------+-----------+------+---------------+------+---------+------+--------+-------------+
 | id | select_type | table     | type | possible_keys | key  | key_len | ref  | rows   | Extra       |
 +----+-------------+-----------+------+---------------+------+---------+------+--------+-------------+
