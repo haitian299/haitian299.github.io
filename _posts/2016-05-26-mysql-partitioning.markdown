@@ -417,7 +417,7 @@ CREATE TABLE ts (id INT, purchased DATE)
 
 传统的散列方法分表对应于分区的Hash／Key分区，具体方法上面已经介绍过。
 
-#### 优化
+#### 查询优化
 
 分区的目的是为了提高查询效率，如果查询范围是所有分区那么就说明分区没有起到作用，我们用`explain partitions`命令来查看`SQL`对于分区的使用情况。
 
@@ -514,7 +514,8 @@ possible_keys: NULL
 ## 分区和分表的比较
 
 1. 传统分表后，`count`、`sum`等统计操作只能对所有切分表进行操作后之后在应用层再次计算得出最后统计数据。而分区表则不受影响，可直接统计。
-> Queries involving aggregate functions such as SUM() and COUNT() can
+
+  > Queries involving aggregate functions such as SUM() and COUNT() can
 > easily be parallelized. A simple example of such a query might be
 > SELECT salesperson_id, COUNT(orders) as order_total FROM sales GROUP
 > BY salesperson_id;. By “parallelized,” we mean that the query can be
