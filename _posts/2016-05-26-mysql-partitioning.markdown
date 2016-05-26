@@ -514,7 +514,6 @@ possible_keys: NULL
 ## 分区和分表的比较
 
 1. 传统分表后，`count`、`sum`等统计操作只能对所有切分表进行操作后之后在应用层再次计算得出最后统计数据。而分区表则不受影响，可直接统计。
-
   > Queries involving aggregate functions such as SUM() and COUNT() can
 > easily be parallelized. A simple example of such a query might be
 > SELECT salesperson_id, COUNT(orders) as order_total FROM sales GROUP
